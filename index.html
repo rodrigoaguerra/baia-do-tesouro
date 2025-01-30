@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão de Mensagem</title>
+  <style>
+    /* Centraliza o botão na tela */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f8ff;
+    }
+
+    /* Estiliza o botão */
+    button {
+      background-color: #007bff;
+      color: white;
+      font-size: 18px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    /* Efeitos no hover */
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    /* Efeitos ao pressionar o botão */
+    button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <button id="meuBotao">Clique Aqui!</button>
+
+  <script>
+    document.getElementById("meuBotao").addEventListener("click", function() {
+      alert("Bem-vindo ao Tesouro do Código!");
+    });
+  </script>
+</body>
+</html>
